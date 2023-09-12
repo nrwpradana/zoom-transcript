@@ -14,7 +14,7 @@ st.text("Make Your Meeting Easy")
 ZOOM_ACCOUNT_ID = st.text_input("Enter Zoom Account ID:")
 ZOOM_CLIENT_ID = st.text_input("Enter Zoom Client ID:")
 ZOOM_CLIENT_SECRET = st.text_input("Enter Zoom Client Secret:", type="password")
-aai.settings.api_key = os.environ.get('077e55247d45442a8072380722f738bd')
+aai.settings.api_key = st.secrets["api_key"]
 
 # Create a Streamlit button to trigger the transcription process
 if st.button("Transcribe Zoom Meeting"):
