@@ -43,13 +43,3 @@ if st.button("Transcribe Zoom Meeting"):
             f.write(transcript.text)
     else:
         st.warning('No meetings to transcribe.')
-
-# Add an optional file upload feature if you want users to upload their own recordings
-uploaded_file = st.file_uploader("Or Upload Zoom Meeting Recording (MP4 or MP3)", type=["mp4", "mp3"])
-if uploaded_file:
-    # Perform transcription on the uploaded file
-    st.header("Transcript for Uploaded Recording:")
-
-    # You'll need to modify this part to transcribe the uploaded file
-    # This could involve saving the file temporarily, passing its path to AssemblyAI, and displaying the transcript
-    st.text("Transcription of the uploaded file goes here.")
